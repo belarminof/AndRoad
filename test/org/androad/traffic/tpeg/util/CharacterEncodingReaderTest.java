@@ -7,6 +7,7 @@ import java.io.StringReader;
 
 import junit.framework.Assert;
 
+import org.andnav2.traffic.tpeg.util.CharacterEncodingReader;
 import org.junit.Test;
 
 

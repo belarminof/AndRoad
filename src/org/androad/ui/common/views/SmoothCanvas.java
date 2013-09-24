@@ -44,9 +44,8 @@ public class SmoothCanvas extends Canvas {
 		this.delegate.setBitmap(bitmap);
 	}
 
-	@Override
 	public void setViewport(final int width, final int height) {
-		this.delegate.setViewport(width, height);
+		((SmoothCanvas) this.delegate).setViewport(width, height);
 	}
 
 	@Override
@@ -217,9 +216,8 @@ public class SmoothCanvas extends Canvas {
 		this.delegate.setDrawFilter(filter);
 	}
 
-	@Override
 	public GL getGL() {
-		return this.delegate.getGL();
+		return ((SmoothCanvas) this.delegate).getGL();
 	}
 
 	@Override
